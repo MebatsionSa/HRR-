@@ -15,13 +15,15 @@ class HotelRegistrationController extends Controller
     {
     	return view('hotels.registration');
     }
-
+    /*hotel registration
+     *
+     * */
     public function register(HotelRegistration $request)
     {
        $validated_data = $request->validated();
        $registration = Hotel::create([
 
-            'hotel_name'         =>  $validated_data['hotel_name'],
+            'h  otel_name'         =>  $validated_data['hotel_name'],
             'hotel_phone_number' =>  $validated_data['hotel_phone_number'],
             'hotel_email'        =>  $validated_data['hotel_email'],
             'hotel_city'         =>  $validated_data['hotel_city'],
@@ -32,7 +34,7 @@ class HotelRegistrationController extends Controller
        if ($registration) {
        	   Auth::guard('hotels')->login($registration);
        	   return redirect()->route('Hotels.HotelDashBoard')->with('hotel_registration','hotel registered successfully');
-       	  
+
        }else{
 
           return back()->with('registration_error','something went wrong please try again');
