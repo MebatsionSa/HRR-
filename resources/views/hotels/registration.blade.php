@@ -33,7 +33,7 @@
 				@enderror
 			</div>
 			<div class="form-group">
-				<label for="hotel_phone_number">Phone Number</label><br/>
+				<label for="hotel_phone_number">Phone Nomber</label><br/>
 				<input type="text" name="hotel_phone_number" id="hote_phone_number" required="required" class="form-control @error('hotel_phone_number') is-invalid @enderror" placeholder="Phone Number" value="{{old('hotel_phone_number')}}">
 				@error('hotel_phone_number')
 				  <span class="invalid-feedback">
