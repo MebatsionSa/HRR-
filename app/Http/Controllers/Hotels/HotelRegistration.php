@@ -1,5 +1,5 @@
 <?php
-
+//to merge and pull
 namespace App\Http\Controllers\Hotels;
 
 use App\Http\Controllers\Controller;
