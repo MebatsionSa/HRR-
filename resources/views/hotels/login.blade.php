@@ -1,3 +1,6 @@
+//Login part for the hotels
+//Front end
+
 @extends('layouts.hotel.hotel_header')
 @section('tittle')
 @parent
