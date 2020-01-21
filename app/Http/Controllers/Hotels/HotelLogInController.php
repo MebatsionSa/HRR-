@@ -1,5 +1,8 @@
 <?php
 
+
+//A Controller for the Hotel login part
+
 namespace App\Http\Controllers\Hotels;
 
 use App\Http\Controllers\Controller;
