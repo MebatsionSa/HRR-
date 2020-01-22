@@ -66,7 +66,7 @@
  					<label for="description"><b>Room Description</b></label>
  					<textarea class="form-control  @error('description') is-invalid @enderror" cols="44" required="required" name="description" value="{{old('description')}}" >
  					</textarea>
-                    
+
                     @error('description')
  					 <span class="invalid-feedback">
  					 	<strong>{{$message}}</strong>
